@@ -6,5 +6,5 @@ applications:
   buildpack: nodejs_buildpack
   services:
       - connectivity
-      - GRU_Airport-destination-service
-      - GRU_Airport-xsuaa-service
+      - destination-service
+      - xsuaa-service

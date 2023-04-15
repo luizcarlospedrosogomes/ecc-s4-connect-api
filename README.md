@@ -12,3 +12,11 @@
 # Exemplos 
  verifique o arquivo server-teste.http
  
+# Deploy CF
+- cf login
+- criar serviços no ambiente alvo: 
+      - connectivity
+      - destination-service
+      - xsuaa-service
+
+- cf push
