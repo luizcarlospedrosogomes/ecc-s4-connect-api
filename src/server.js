@@ -56,7 +56,7 @@ app.post('/token', async (req, res) =>{
 app.use(passport.initialize());
 app.use(passport.authenticate('JWT', { session: false }))
 
-app.use('/xsuaa',async (req, res, next) =>{    
+app.use(async (req, res, next) =>{    
     const jwt = connectivity.retrieveJwt(req);
     const destinationName  = req.headers['destination-name']; 
     const props = { url: req.path, data: req['data']}

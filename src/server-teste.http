@@ -6,12 +6,12 @@ POST http://localhost:3000/direct/{{$dotenv URL}}
 destination-name: SAP_GATEWAY
 
 ###
-GET http://localhost:3000/xsuaa/{{$dotenv URL}}
+GET http://localhost:3000/{{$dotenv URL}}
 destination-name: SAP_GATEWAY
 Authorization: Bearer {{$dotenv TOKEN}}
 
 ###
-POST http://localhost:3000/xsuaa/{{$dotenv URL}}
+POST http://localhost:3000/{{$dotenv URL}}
 destination-name: SAP_GATEWAY
 Authorization: Bearer {{$dotenv TOKEN}}
 ###
