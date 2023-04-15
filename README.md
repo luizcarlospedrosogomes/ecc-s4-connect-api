@@ -1,6 +1,6 @@
 # Tipos de autenticacao
 - /direct: sem autenticacao, que deve estar desabilitada para ambientes de clientes
-- /xuaa: autenticada com Bearer token do serviço xsuaa do BTP
+- /: autenticada com Bearer token do serviço xsuaa do BTP
 # run localhost
 - npm install
 - gere um default-env com os serviços: connectivity, destination e xsuaa
