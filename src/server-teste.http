@@ -1,0 +1,6 @@
+GET http://localhost:3000/sap/opu/odata/sap/ZGWNB_CUSTOMER_SRV/CustomerSet?sap-language=PT
+destination-name: SAP_GATEWAY
+
+###
+POST http://localhost:3000/sap/opu/odata/sap/ZGWNB_CUSTOMER_SRV/CustomerSet?sap-language=PT
+destination-name: SAP_GATEWAY

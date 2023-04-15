@@ -1,0 +1,10 @@
+applications:
+- name: connector-ecc-api
+  random-route: true
+  path: ./
+  memory: 128M
+  buildpack: nodejs_buildpack
+  services:
+      - connectivity
+      - GRU_Airport-destination-service
+      - GRU_Airport-xsuaa-service
