@@ -11,9 +11,11 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
+    "@sap-cloud-sdk/connectivity": "^3.1.1",
+    "@sap-cloud-sdk/http-client": "^3.1.1",
     "@sap/approuter": "*",
     "@sap/xsenv": "^3.4.0",
-    "axios": "^1.3.5",
+    "axios": "^1.3.5",    
     "express": "^4.18.2",
     "winston": "^3.8.2"
   },

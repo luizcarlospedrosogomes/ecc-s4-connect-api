@@ -1,6 +1,24 @@
-GET http://localhost:3000/sap/opu/odata/sap/ZGWNB_CUSTOMER_SRV/CustomerSet?sap-language=PT
+GET http://localhost:3000/direct/{{$dotenv URL}}
 destination-name: SAP_GATEWAY
 
 ###
-POST http://localhost:3000/sap/opu/odata/sap/ZGWNB_CUSTOMER_SRV/CustomerSet?sap-language=PT
+POST http://localhost:3000/direct/{{$dotenv URL}}
 destination-name: SAP_GATEWAY
+
+###
+GET http://localhost:3000/xsuaa/{{$dotenv URL}}
+destination-name: SAP_GATEWAY
+Authorization: Bearer {{$dotenv TOKEN}}
+
+###
+POST http://localhost:3000/xsuaa/{{$dotenv URL}}
+destination-name: SAP_GATEWAY
+Authorization: Bearer {{$dotenv TOKEN}}
+###
+POST http://localhost:3000/token
+Content-Type: application/json
+
+{
+    "username": "{{$dotenv USERNAME}}",
+    "password": "{{$dotenv PASSWORD}}"
+}
